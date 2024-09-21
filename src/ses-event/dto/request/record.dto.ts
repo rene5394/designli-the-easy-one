@@ -8,7 +8,7 @@ export class RecordDto {
 
   @ValidateNested()
   @Type(() => SesDto)
-  ses: string;
+  ses: SesDto;
 
   @IsString()
   eventSource: string;
