@@ -7,7 +7,7 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ActionDto } from './action.dto';
-import { VeredictDto } from './veredict.dto';
+import { VerdictDto } from './verdict.dto';
 
 export class ReceiptDto {
   @IsDate()
@@ -21,27 +21,27 @@ export class ReceiptDto {
   recipients: string[];
 
   @ValidateNested()
-  @Type(() => VeredictDto)
-  spamVerdict: VeredictDto;
+  @Type(() => VerdictDto)
+  spamVerdict: VerdictDto;
 
   @ValidateNested()
-  @Type(() => VeredictDto)
-  virusVerdict: VeredictDto;
+  @Type(() => VerdictDto)
+  virusVerdict: VerdictDto;
 
   @ValidateNested()
-  @Type(() => VeredictDto)
-  spfVerdict: VeredictDto;
+  @Type(() => VerdictDto)
+  spfVerdict: VerdictDto;
 
   @ValidateNested()
-  @Type(() => VeredictDto)
-  dkimVerdict: VeredictDto;
+  @Type(() => VerdictDto)
+  dkimVerdict: VerdictDto;
 
   @ValidateNested()
-  @Type(() => VeredictDto)
-  dmarcVerdict: VeredictDto;
+  @Type(() => VerdictDto)
+  dmarcVerdict: VerdictDto;
 
   @ValidateNested()
-  @Type(() => VeredictDto)
+  @Type(() => VerdictDto)
   dmarcPolicy: string;
 
   @ValidateNested()
