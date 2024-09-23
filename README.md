@@ -16,7 +16,7 @@ in a .env file. A sample .env.example file is provided for easy setup.
 
 1.  Clone the repository:
 
-> git clone \<https://github.com/rene5394/designli-the-easy-one\>
+> git clone \<https://github.com/rene5394/designli-the-easy-one.git\>
 
 2.  Navigate to the project directory:
 
@@ -29,8 +29,6 @@ in a .env file. A sample .env.example file is provided for easy setup.
 4.  Create the .env file:
 
 > cp .env.example .env
->
-> Modify the .env file with your environment variables.
 
 **Running the Application**
 
