@@ -1,5 +1,5 @@
 import { Type } from 'class-transformer';
-import { IsString, ValidateNested } from 'class-validator';
+import { IsNotEmpty, IsString, ValidateNested } from 'class-validator';
 import { SesDto } from './ses.dto';
 
 export class RecordDto {
@@ -7,6 +7,7 @@ export class RecordDto {
   eventVersion: string;
 
   @ValidateNested()
+  @IsNotEmpty()
   @Type(() => SesDto)
   ses: SesDto;
 

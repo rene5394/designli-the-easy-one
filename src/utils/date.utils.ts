@@ -1,4 +1,4 @@
-export const getMonthName = (date: Date): string => {
-  const parsedDate = new Date(date);
+export const getMonthName = (dateString: string): string => {
+  const parsedDate = new Date(dateString);
   return parsedDate.toLocaleString('es-ES', { month: 'long' });
 };
